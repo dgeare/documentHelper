@@ -1,0 +1,43 @@
+{
+  "name": "doc_helper",
+  "version": "0.1.0",
+  "description": "Assorted helper tools for the browser",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "window",
+    "document",
+    "extensions",
+    "helper"
+  ],
+  "author": "David Geare",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "webpack": "^3.11.0"
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "> 1% in US",
+            "IE 10"
+          ]
+        }
+      }
+    ]
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}
